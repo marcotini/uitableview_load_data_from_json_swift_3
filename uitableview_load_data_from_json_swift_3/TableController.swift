@@ -9,15 +9,12 @@ class TableController: UITableViewController {
 
     var TableData:Array< String > = Array < String >()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        get_data_from_url("http://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=ios&site=stackoverflow")
+        get_data_from_url("https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=ios&site=stackoverflow")
     }
-
-
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
